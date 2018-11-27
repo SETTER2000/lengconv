@@ -21,7 +21,7 @@ func FtToM(f Foot) Meter {
 }
 
 func FtToMm(f Foot) Millimeter {
-	return Millimeter(Millimeter(f) * 304.8) // преобразование типа Foot в Millimeter
+	return Millimeter(Millimeter(f) * FootMM) // преобразование типа Foot в Millimeter
 }
 
 func MToFt(m Meter) Foot {
@@ -41,7 +41,7 @@ func MmToCm(m Millimeter) Centimeter {
 }
 
 func MmToFt(m Millimeter) Foot {
-	return Foot(Foot(m) / 304.8) // преобразование типа Millimeter в Foot
+	return Foot(Foot(m) / Foot(FootMM)) // преобразование типа Millimeter в Foot
 }
 
 func MmToM(m Millimeter) Meter {

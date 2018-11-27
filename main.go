@@ -9,8 +9,9 @@ type Meter float64
 type Foot float64
 
 const (
-	FootC Centimeter = 30.48
-	FootM Foot       = 3.281
+	FootC  Centimeter = 30.48
+	FootM  Foot       = 3.281
+	FootMM Millimeter = 304.8
 )
 
 func (c Centimeter) String() string {
